@@ -7,6 +7,9 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager Instance;
 
+    public float HorizontalAxis { get; private set; }
+    public float VerticalAxis { get; private set; }
+
     public Action OnRestartButtonPressed;
 
     void CheckForInput()
